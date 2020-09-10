@@ -1,0 +1,36 @@
+Assignemnt-1 Create different types of Files.
+
+subham@LAPTOP-B3G5TU87:~$ touch a1.text
+subham@LAPTOP-B3G5TU87:~$ touch A1.text
+subham@LAPTOP-B3G5TU87:~$ touch A!.Text
+-bash: !.Text: event not found
+subham@LAPTOP-B3G5TU87:~$ touch A1.Text
+subham@LAPTOP-B3G5TU87:~$ touch A1.TEXT
+
+
+subham@LAPTOP-B3G5TU87:~$ touch A1.text.text
+subham@LAPTOP-B3G5TU87:~$ touch A1.text.html
+subham@LAPTOP-B3G5TU87:~$ cat >A1.text.js
+this file is created using cat command
+
+subham@LAPTOP-B3G5TU87:~$ ls
+A1.TEXT  A1.Text  A1.text  A1.text.html  A1.text.js  A1.text.text  a1.text
+subham@LAPTOP-B3G5TU87:~$ touch .a1.text
+
+subham@LAPTOP-B3G5TU87:~$ touch .b1
+subham@LAPTOP-B3G5TU87:~$ ls -l
+total 0
+-rw-rw-rw- 1 subham subham  0 Sep  7 20:50 A1.TEXT
+-rw-rw-rw- 1 subham subham  0 Sep  7 20:50 A1.Text
+-rw-rw-rw- 1 subham subham  0 Sep  7 20:49 A1.text
+-rw-rw-rw- 1 subham subham  0 Sep  7 20:53 A1.text.html
+-rw-rw-rw- 1 subham subham 39 Sep  7 20:54 A1.text.js
+-rw-rw-rw- 1 subham subham  0 Sep  7 20:52 A1.text.text
+-rw-rw-rw- 1 subham subham  0 Sep  7 20:49 a1.text
+subham@LAPTOP-B3G5TU87:~$ ls -a
+.   .a1.text  .bash_history  .bashrc     .motd_shown  .sudo_as_admin_successful  A1.Text  A1.text.html  A1.text.text
+..  .b1       .bash_logout   .landscape  .profile     A1.TEXT                    A1.text  A1.text.js    a1.text
+
+subham@LAPTOP-B3G5TU87:~$ touch A1.text.html.js.cpp
+subham@LAPTOP-B3G5TU87:~$ ls
+A1.TEXT  A1.Text  A1.text  A1.text.html  A1.text.html.js.cpp  A1.text.js  A1.text.text  a1.text
